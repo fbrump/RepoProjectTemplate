@@ -1,0 +1,73 @@
+﻿@{  
+    ViewBag.Title = "Home";
+    
+    /// Exemplo de variável.
+    string nome = "Felipe";
+    int idade = 22;
+    string paragrafo = "Mery";
+
+    string txtNome = ViewBag.classificacao;
+}
+
+@using ProjetoPadrao.BE.Entidade;
+@model Classificacao
+
+<h2>Home de Classificação</h2>
+
+<div class="destaque">
+    <h3>Exemplo de Variável</h3>
+    <label>Nome : @nome</label><br />
+    <label>Idade : @idade</label>
+</div>
+<div class="destaque">
+    <h3>Exemplo de Condição</h3>
+    @if (nome == "Felipe")
+    { 
+        <p>Opa, o nome é Felipe.</p>
+    }
+    else { 
+        <p>Opa, o nome não é Felipe.</p>
+    }
+</div>
+<div class="destaque">
+    <h3>Exemplo de Laços</h3>
+    @foreach (char item in paragrafo)
+    {
+        <label>@item</label><br />
+    }
+</div>
+<div class="destaque">
+    <h3>Dinâmicro objeto</h3>
+    <label>@nome</label>
+    <p>Hoje é @ViewBag.DataAtual ,
+        às @ViewBag.HoraAtual</p>
+</div>
+<div class="destaque">
+    <h3>Strongly Type View - <em>Passagem de um objeto para a camada de Apresentação</em></h3>
+    <ul>
+        <li>Classificação : @Model.TxtNome</li>
+        <li>Código da CLassificação : @Model.IdClassificacao</li>
+        <li>Comentário : <input type="text" id="txtComentario" value="@Model.DscComentario" disabled/></li>
+        <li>Código da cor: @Model.CodCor</li>
+        <li>Cor: @Model.TxtCor</li>
+        <li>
+            <label> Definição da cor :
+                <input type="text" id="txtCor" value="@Model.TxtCor" style="background: @Model.CodCor" class="w400" title="@Model.TxtNome."/>
+            </label>
+        </li>
+    </ul>
+</div>
+<div class="destaque">
+    <h3>Html Helpers</h3>
+    <a href="../Classificacao/ConsultaClassificacao">Lista de Classificação HTML Puro</a>
+    @Html.ActionLink("Lista de Classificação - ActionLink", "ConsultaClassificacao", "Classificacao");
+</div>
+<div id="exemplo-um" class="destaque">
+    <h3>Exemplo Um - <strong>Dropdownlist</strong></h3>
+</div>
+<div id="exemplo-dois" class="destaque">
+    <h3>Exemplo Dois - <strong>Gridview</strong></h3>
+</div>
+<div id="exemplo-tres" class="destaque">
+    <h3>Exemplo Três - <strong>Eventos</strong></h3>
+</div>

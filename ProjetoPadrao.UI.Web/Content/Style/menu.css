@@ -1,0 +1,120 @@
+﻿/*
+
+============== DOCUMENTO CSS - INFRAERO 2013 ====
+
+Autor: Felipe Brum - Programador B [TISI 3]
+Localização: SEDE
+Ramal: 5015
+EMAIL: fbrump@gmail.com
+=================================================
+
+============== VERSIONAMENTO ====================
+
+Versão: 1.0
+OBS: Oraganizar os atributos css por ordem alfabetica
+
+Autor: Felipe Brum
+Registro da Versão 1.0:
+Última atualização: dd/mm/2---
+Descrição da atualização: Criação do Documento. Menu e Caminho de Pão.
+
+=================================================
+
+ */
+
+/**************** MENU - Links - Início ****************/
+nav#menu
+{
+    margin:10px 0 0 0 ;
+    }
+    nav#menu ul {
+        border-bottom: 1px #5C87B2 solid;
+        padding: 5px 0 0;
+        position: relative;
+        margin: 0;
+        text-align: right;
+        list-style-type: none;
+    }
+        nav#menu ul li.oculto
+        {
+            display:none;
+            }
+        nav#menu ul li {
+            display: inline;
+            list-style: none;
+        }
+
+        nav#menu ul li#greeting {
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            line-height: 2.8em;
+            color: #fff;
+        }
+
+            nav#menu ul li a 
+            {                
+                padding: 10px 20px;
+                font-weight: bold;
+                text-decoration: none;
+                line-height: 2.8em;
+                background-color: #D7EFD7;
+                border-radius: 4px 4px 0 0;
+                -webkit-border-radius: 4px 4px 0 0;
+                -moz-border-radius: 4px 4px 0 0;
+            }
+
+            nav#menu ul li a:hover {
+                background-color: #F7F7F7;
+                text-decoration: none;
+            }
+
+            nav#menu ul li a:active {
+                background-color: #a6e2a6;
+                text-decoration: none;
+            }
+
+            nav#menu ul li.selected a {
+                background-color: #fff;
+                color: #000;
+            }
+            
+            
+/**************** MENU - Links - Fim ****************/
+
+/**************** CAMINHO DE PÃO - Links - Início ****************/
+
+nav#caminho-pao
+{
+    }
+    
+    nav#caminho-pao span
+    {
+        font-size: 0.9em;
+        }
+    
+    nav#caminho-pao a, 
+    nav#caminho-pao label, 
+    nav#caminho-pao strong
+    {
+        font-family: Verdana;
+        font-size: 0.8em;
+        font-weight: bold;
+        }
+    nav#caminho-pao a:hover { font-weight:700;}
+    
+    nav#caminho-pao ul
+    {
+        height: 18px;
+        list-style-type: none;
+        margin: 0;
+        padding: 2px 5px;
+        }
+        
+        nav#caminho-pao ul li
+        {
+            float: left;
+            padding-right: 5px;
+            }
+
+/**************** CAMINHO DE PÃO - Links - Fim ****************/

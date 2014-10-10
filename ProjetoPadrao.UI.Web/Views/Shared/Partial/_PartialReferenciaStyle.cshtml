@@ -1,0 +1,20 @@
+﻿<link href="@Url.Content("~/Content/Style/base.css")" rel="stylesheet" type="text/css" />
+@{
+    
+    /// Definição da variável que vai armazenr o caminho das imagens padrões dos botões.
+    if (base.Session["urlImg"] == null){
+        
+        var dicUrl = new Dictionary<string, string>();
+        
+        dicUrl.Add("urlImgEdit","../../../Content/Image/icons/gray/edit.gif");
+        dicUrl.Add("urlImgSave", "../../../Content/Image/icons/gray/diskette.gif");
+        dicUrl.Add("urlImgDelete", "../../../Content/Image/icons/gray/x.gif");
+        dicUrl.Add("urlImgSearch", "../../../Content/Image/icons/gray/search.gif");
+        dicUrl.Add("urlImgTrash", "../../../Content/Image/icons/gray/trash.gif");
+        dicUrl.Add("urlImgArrowLeft", "../../../Content/Image/icons/gray/arrow-left.gif");
+        dicUrl.Add("urlImgArrowRight", "../../../Content/Image/icons/gray/arrow-right.gif");
+        
+        base.Session["urlImg"] = dicUrl;
+    }
+    
+    }

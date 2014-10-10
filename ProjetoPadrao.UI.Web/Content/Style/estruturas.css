@@ -1,0 +1,200 @@
+﻿/*
+
+============== DOCUMENTO CSS - INFRAERO 2013 ====
+
+Autor: Felipe Brum - Programador B [TISI 3]
+Localização: SEDE
+Ramal: 5015
+EMAIL: fbrump@gmail.com
+=================================================
+
+============== VERSIONAMENTO ====================
+
+Versão: 1.0
+OBS: Oraganizar os atributos css por ordem alfabetica
+
+Autor: Felipe Brum
+Registro da Versão 1.0:
+Última atualização: dd/mm/2---
+Descrição da atualização: Criação do Documento. Menu e Caminho de Pão.
+
+=================================================
+
+ */
+
+/**************** SITE - Início ****************/
+
+body,html {
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+    body .page {
+        margin: 0 auto;
+        text-align: left;
+        width: 1000px;
+    }
+
+    body header#header  {
+        position: relative;
+        margin-bottom: 0px;
+        color: #000;
+        padding: 0;
+    }
+
+    body #main {
+        /*padding: 15px 30px 15px 30px;
+        background-color: #fff;
+         border-radius: 4px 0px 0px 4px;
+        -webkit-border-radius: 4px 0 0 4px;
+        -moz-border-radius: 4px 0 0 4px;*/
+    }
+
+    body footer, 
+    body #footer {
+        padding: 10px 0;
+        text-align: center;
+        line-height: normal;
+        margin: 0 0 30px 0;
+        font-size: .9em;
+        border-radius: 4px 4px 4px 4px;
+        -webkit-border-radius: 4px 4px 4px 4px;
+        -moz-border-radius: 4px 4px 4px 4px;
+        height: 100px;
+    }
+/**************** SITE - Fim ****************/
+
+/**************** SITE CABEÇALHO - Topo - Início ****************/
+
+#header section.header-top
+{
+    height: 100px;
+    padding: 5px;
+    width: 100%;
+    }
+
+    #header section.header-top div.infoPage
+    {
+        float:left;
+        width:60%;
+        }
+    
+        #header section.header-top div.infoPage h1
+        {
+            font-weight: bold;
+            padding: 5px 0;
+            margin: 0;
+            color: #fff;
+            border: none;
+            line-height: 2em;
+            font-size: 32px !important;
+            text-shadow: 1px 1px 2px #111;
+            }
+        #header section.header-top div.infoPage h3
+        {
+            display: block;
+            float: left;
+            text-align: left;
+            }
+            
+            #header section.header-top div.infoPage h3 em,
+            #header section.header-top div.infoPage h3
+            {
+                color: #E5E5E5;
+                }
+            
+    #header section.header-top div.infoLogin
+    {
+        float:right;
+        font-size: 1.1em;
+        display: block;
+        text-align: right;
+        margin: 10px;
+        color: White;
+        width: 30%;
+        }
+
+            #header section.header-top div.infoLogin a:link {
+                color: white;
+                text-decoration: underline;
+            }
+
+            #header section.header-top div.infoLogin a:visited {
+                color: white;
+                text-decoration: underline;
+            }
+
+            #header section.header-top div.infoLogin a:hover {
+                color: white;
+                text-decoration: none;
+            }
+
+/**************** SITE CABEÇALHO - Topo - Fim ****************/
+
+/**************** SITE CABEÇALHO - Rodape - Fim ****************/
+
+.header-botton
+{
+    }
+
+/**************** SITE CABEÇALHO - Rodape - Fim ****************/
+
+/**************** SITE MAIN - Início ****************/
+
+#main #main-header
+{
+    border-radius: 0 0 10px 10px;
+    padding: 9px;
+    }
+    
+    #main #main-header h2
+    {
+        }
+    #main #main-header h4
+    {
+        padding: 5px 0 0 10px;
+        }
+
+#main section#main-content
+{
+    margin: 5px 30px;
+    height: 100%;
+    min-height: 500px;
+    }
+
+/**************** SITE MAIN - Fim ****************/
+
+
+/**************** SUMARIO - Início ****************/
+section.sumario
+{
+    }
+    
+    section.sumario dl.diretia { float:left; }
+    section.sumario dl.esquerda{ float: right;}
+    section.sumario dl.principal 
+    {
+        height: 300px;
+        padding: 10px;
+        }
+    
+    section.sumario dl
+    {
+        float: left;
+        width: 400px;
+        margin: 5px 0px;
+        }
+        
+            section.sumario dl dt
+            {
+                font-size: 1.2em;
+                }
+            
+            section.sumario dl dd
+            {
+                
+                }
+/**************** SUMARIO - Fim ****************/

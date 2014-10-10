@@ -1,0 +1,27 @@
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BLL.dll
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BLL.pdb
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BE.dll
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.DAL.dll
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BE.pdb
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.DAL.pdb
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ProjetoPadrao.BLL.dll
+D:\Users\t122528257\Documents\Visual Studio 2010\Projects\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ProjetoPadrao.BLL.pdb
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BLL.dll
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BLL.pdb
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BE.dll
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.DAL.dll
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BE.pdb
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.DAL.pdb
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ResolveAssemblyReference.cache
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ProjetoPadrao.BLL.dll
+D:\BRUM\Documentos\Projetos\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ProjetoPadrao.BLL.pdb
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BLL.dll
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BLL.pdb
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BE.dll
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.DAL.dll
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.BE.pdb
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\bin\Debug\ProjetoPadrao.DAL.pdb
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ProjetoPadrao.BLL.csprojResolveAssemblyReference.cache
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ProjetoPadrao.BLL.dll
+D:\BRUM\Documentos\Projetos\Meus\Prototipos\ProjetoPadrao\ProjetoPadrao.BLL\obj\Debug\ProjetoPadrao.BLL.pdb

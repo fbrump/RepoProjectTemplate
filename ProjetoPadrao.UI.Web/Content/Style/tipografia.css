@@ -1,0 +1,31 @@
+/* 
+
+============== DOCUMENTO CSS - INFRAERO 2009 ====
+Autor: David Silva - Analista de Designer / Equipe de Designer [TISI 3]
+Localização: SEDE
+Ramal: 2560
+EMAIL: davidjrnegao@gmail.com
+CELULAR: 	61 - 96889359
+Descrição: Formatação das fontes do sistema
+=================================================
+
+*/
+
+body{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4{
+	font-family:Tahoma, Verdana, Arial, sans-serif;
+	font-weight:normal;
+	padding:0;
+	margin:0;
+}
+
+h1{
+	font-size:20px;
+}
+
+h2{
+    font-size: 1.7em;
+}

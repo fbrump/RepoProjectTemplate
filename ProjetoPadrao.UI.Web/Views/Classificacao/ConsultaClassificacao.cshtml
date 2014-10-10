@@ -1,0 +1,89 @@
+﻿@using ProjetoPadrao.BE.Entidade;
+@model IList<Classificacao>
+
+@{
+    ViewBag.Title = "Consulta Classificacao";
+    ViewBag.TitlePagina = "Consulta das Classificações";
+
+    Dictionary<string, string> dicUrlImg = base.Session["urlImg"] as Dictionary<string, string>;
+        
+}
+
+@section PageScripts{
+    <script type="text/javascript">
+        /*
+        $(document).ready(function () {
+            $('#pnlInclusao').hide();
+
+            // Eventos =====================================================================
+            $('#btnMostrarPainel').val('Mostrar').click(function () {
+                if ($(this).val() == 'Mostrar') {
+                    $(this).val('Ocultar').attr('title', 'Oculta o painel para inclusão de uma classificação');
+                    $('#pnlInclusao').show().find("legend").text("Inserir classificação");
+                    $('#btnSalvar').val('Incluir');
+                }
+                else{
+                    $(this).val('Mostrar').attr('title','Mostra o painel com as informações para incluir uma classificação');
+                    $('#pnlInclusao').hide().find("legend").text(""); ;
+                    $('#btnSalvar').val('');
+                }
+            });
+
+            $('#txtNomeClassificacao').val('Nome da Classificação').bind('click focus change', '#txtNomeClassificacao', function () {
+                if ($(this).val() == 'Nome da Classificação') {
+                    $(this).val('');
+                }
+            }).blur(function(){
+                if ($(this).val() == '') {
+                    $(this).val('Nome da Classificação');
+                }
+            });
+
+            // Eventos =====================================================================
+
+        });*/
+    </script>
+}
+<section>
+    <fieldset class="fdsConsulta">
+        <legend>Resultado da Consulta</legend>
+        <table class="gridview">
+            <thead>
+                <tr>
+                    <td class="center">Código</td>
+                    <td>Nome</td>
+                    <td>Comentário</td>
+                    <td class="center">Cor</td>
+                    <td class="center">Ação</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in this.Model)
+                {
+                    <tr>
+                        <td class="center"><label>@item.IdClassificacao</label></td>
+                        <td>@item.TxtNome</td>
+                        <td><p>@item.DscComentario </p></td>
+                        <td class="center"><div class="content-cor" style=" background: @item.CodCor">@item.TxtCor </div></td>
+                        <td>
+                            <a href="/Classificacao/Edit/" class="editar" title="Editar a classificação">
+                                <img src="@dicUrlImg["urlImgEdit"]" alt="Editar a classificação" title="Editar a classificação"/>
+                            </a>
+                        </td>
+                            
+                    </tr>  
+                }
+            </tbody>
+            <tfoot class="rodape">
+                <tr>
+                    <td colspan="5">Rodapé da GridView</td>
+                </tr>
+            </tfoot>
+        </table>
+    </fieldset>
+</section>
+<section class="botoes">
+    <a href="/Classificacao/Create/" title="Incluir uma nova classificação">
+        <img src="@dicUrlImg["urlImgSave"]" alt="Incluir uma nova classificação" title="Incluir uma nova classificação"/>
+    </a>
+</section>

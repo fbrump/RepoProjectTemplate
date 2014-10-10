@@ -1,0 +1,46 @@
+﻿
+/*
+
+
+============== DOCUMENTO CSS - INFRAERO 2009 ====
+Autor: David Silva - Analista de Designer / Equipe de Designer [TISI 3]
+Localização: SEDE
+Ramal: 2560
+EMAIL: davidjrnegao@gmail.com
+CELULAR: 	61 - 96889359
+Descrição: Estilização para grid
+=================================================
+*/
+
+/**************** Botões - Início ****************/
+
+.botoes
+{
+    clear:both;
+    padding-top: 20px; 
+    padding-left:20px; 
+    }
+    
+    .botoes a
+    {
+        float: left;
+        margin: 0 5px;
+        padding: 0;
+        z-index: 1000;
+        }
+        
+    .botoes a:hover
+    {
+        text-decoration: none;
+        }
+    
+        .botoes a img
+        {
+            margin-top: -4px;
+            }
+            
+    .botoes input
+    {
+        }
+        
+/**************** Botões - Início ****************/
