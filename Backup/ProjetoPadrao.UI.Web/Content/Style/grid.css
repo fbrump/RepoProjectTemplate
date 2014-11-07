@@ -1,0 +1,418 @@
+
+/*
+
+
+============== DOCUMENTO CSS - INFRAERO 2009 ====
+Autor: David Silva - Analista de Designer / Equipe de Designer [TISI 3]
+Localização: SEDE
+Ramal: 2560
+EMAIL: davidjrnegao@gmail.com
+CELULAR: 	61 - 96889359
+Descrição: Estilização para grid
+=================================================
+*/
+
+.painelBusca, .fdsConsulta
+{
+	background: none repeat scroll 0 0 #EBEDEA;
+    border: 1px solid #EFE8D2;
+    font-size: 12px;
+    margin-bottom: 10px;
+    min-height: 80px;
+    padding: 0 0 10px;
+    width: 921px;
+}
+    .painelBusca .botoes a span, .fdsConsulta .botoes a span
+    {
+        color: #006699;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        z-index: 1;
+    }
+
+.tabResultado, .fdsConsulta
+{	
+    border:1px solid #EFE8D2; 
+	margin-top:10px;
+	padding: 0 5px;
+}
+
+    .tabResultado legend, .fdsConsulta legend
+    {
+        padding:0;
+	    font-weight:bold;
+	    color:#666;
+	    font-size:13px;
+	    margin-left:10px;
+	    padding-bottom:10px;
+	    font-weight:bold;
+    }
+    
+    .tabela_padrao input[type="checkbox"], 
+    .tabela_padrao input[type="radio"]
+    {border: 0px !Important}
+    
+    .tabela_padrao tr td.margemPadrao
+        {
+            padding-left: 5px;
+            text-align: left;
+        }
+    
+.tabResultado:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+table{
+	font-size:11px;
+	margin: 8px auto;
+	border: 0;
+}
+
+/* Estilo padrao das Grids de listagem*/
+.tabela_padrao
+{
+    font-size:11px;
+	margin: 8px 0;
+	width: 100%;
+	border-collapse: collapse;
+	border-bottom: 0;
+	text-align: center;
+}
+
+.tabela_padrao tr th {border-left: 2px solid #FFF !important; border-right: 2px solid #FFF !important; border-spacing: 0 !important; padding: 5px 8px;}
+.tabela_padrao tr td {border-left: 2px solid #FFF !important; border-right: 2px solid #FFF !important; border-spacing: 0 !important;}
+/* Estilo padrao das Grids de listagem - Fim */
+
+.tabResultado .estatistica{float: left; margin: 0 0 7px 10px\0/; padding: 0;}
+.tabResultado .paginacao_alto{float: right; margin-right: 10px;}
+.tabResultado .paginacao_baixo{float: right; margin-bottom: 5px;}
+.tabResultado tr .alingEsquerda { text-align:left !important; }
+
+.tabYellow{background-color: #fee301; }
+
+.tabEmpty
+{
+    font-size:12px;	
+	border-spacing: 0 !important;
+	border: 0;
+	text-align: center;
+}
+
+.tabEmpty td
+{
+    height: 50px;
+    vertical-align: middle;
+}
+
+.tabTH{
+	font-size:12px;	
+	border-spacing: 0 !important;
+	border-top: 0;
+}
+
+.tabODD td, .tabEVEN td{
+	padding: 2px 3px;	
+}
+
+.tabODD td a, .tabEVEN td a
+{
+    font-weight: bold;
+}
+
+.tabODD td a:hover, .tabEVEN td a:hover
+{
+    font-weight: bold;
+}
+
+/*Link para tooltip*/
+.tabODD td a.tooltip, .tabEVEN td a.tooltip
+{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.tabODD td a.tooltip:hover, .tabEVEN td a.tooltip:hover
+{
+    color: #FFF !important;
+    font-weight: bold;
+}
+
+.tabYellow td a.tooltip
+{
+    color: #000;
+    font-weight: bold;
+}
+
+.tabYellow td a.tooltip:hover
+{
+    color: #000 !important;
+    font-weight: bold;
+    border-bottom: 1px dashed #000;
+}
+/*Link para tooltip*/
+ 
+/*Paginacao */
+.paginacao
+{
+    padding: 20px 0 5px 0;
+    height: 20px;    
+    text-align: center;
+    clear: both;
+}
+
+.paginacao input, .paginacao input:hover, .paginacao input:focus
+{
+    border: 0;
+}
+
+.paginacao select, .paginacao select:hover, .paginacao select:focus
+{
+    margin-top: -2px;
+}
+
+.paginacao select
+{
+    min-width: 40px;
+}
+
+/*
+.paginacao input[type="image"]{width: 13px !Important}
+ */
+ 
+.paginacao .contemPaginacao
+{    
+    clear: both; height:15px;
+    margin: 0 auto;
+    position: relative;
+    left: 33%;
+}
+
+.paginacao .tituloPaginacao 
+{
+    float: left;
+    padding: 0 2px 0 0;
+    font-size: 12px;
+}
+
+.paginacao .ulPaginacao
+{
+    float: left; 
+}
+
+.paginacao .ulPaginacao li
+{
+    float: left;
+    margin: 0 4px;
+}
+
+.paginacao .ulPaginacao li a
+{
+    text-decoration: underline;
+}
+
+.paginacaoItens, .paginacaoItens li{  padding: 0; margin: 0; list-style: none !important;}  
+.paginacaoItens li {float:left; margin: 0 4px;}
+/*Paginacao */
+
+/*
+tr.paginacao table tr td a:before{content: "|"}
+*/
+
+.listagem 
+{
+	border-collapse: separate !Important;
+    border-spacing: 2px !Important;
+    text-indent: 0 !Important;
+    border: none;
+}
+
+.tabTH th{
+	border: none;
+}
+
+/* Avisos de Patio INICIO */
+.tdExAviso 
+{text-align:center; font-weight:bold; 
+font-family:verdana; font-size:18px;}
+
+.tdExPrevisao 
+{border-style:outset; border-width:0px;  text-align:center; font-weight:bold;
+font-family:verdana; font-size:18px;}
+/* Avisos de Patio FIM */
+
+/******** SMSP ***************************/
+
+/******* GridView - INÍCIO ***************/
+.gridview
+{
+    border: 1px none silver;
+    width:100%;
+}
+
+    .gridview tr td label, .gridview tr td span
+    {
+        margin-left: 5px;
+        }
+        
+    /*============ GRIDVIEW - Cabeçalho - Início ============*/
+    .gridview .cabecalho, .gridview thead
+    {
+        border:1px groove #AAAAAA;
+        text-align:left;
+        height: 28px;
+        }
+            
+        .gridview .cabecalho, .gridview thead, .gridview .cabecalho label, .gridview thead label, .gridview .cabecalho span, .gridview thead span
+        {
+            font-weight: bold;
+            }
+                
+        .gridview .cabecalho .center, .gridview thead .center
+        {
+            text-align: center;
+            }
+    /*============ GRIDVIEW - Cabeçalho - Fim ============*/
+        
+    /*============ GRIDVIEW - Corpo - Início ============*/
+    
+    .gridview tbody tr td, .gridview .corpo tr td,
+    .gridview tbody tr, .gridview .corpo tr
+    {
+        border: 0 none;
+        }
+    
+    .gridview tbody tr td p, .gridview .corpo tr td p
+    {
+            
+        text-align: justify;
+        text-indent: 15px;
+        word-wrap: break-word;
+        margin: 5px 2px;
+    }
+        
+    .gridview tbody tr .center, .gridview .corpo tr .center, 
+    .gridview tbody tr .center label, .gridview .corpo tr .center label, 
+    .gridview tbody tr .center span, .gridview .corpo tr .center span
+    {
+        text-align:center;
+        }
+    .gridview tbody tr .left, .gridview .corpo tr .left, 
+    .gridview tbody tr .left label, .gridview .corpo tr .left label, 
+    .gridview tbody tr .left span, .gridview .corpo tr .left span
+    {
+        text-align:left;
+        }
+            
+    .gridview tbody tr .right, .gridview .corpo tr .right, 
+    .gridview tbody tr .right label, .gridview .corpo tr .right label, 
+    .gridview tbody tr .right span, .gridview .corpo tr .right span
+    {
+        text-align:right;
+        }
+        
+    .gridview tbody tr td .content-cor, .gridview .corpo tr td .content-cor
+    {
+        padding:5px;
+        width: 90%;
+        height: 15px;
+        }
+        
+    /*============ GRIDVIEW - Corpo - Fim ============*/
+        
+    /*============ GRIDVIEW - Rodapé - Início ============*/
+    .gridview tfoot, .gridview .rodape
+    {
+        border:1px groove #AAAAAA;
+        color: #FFFFFF;
+        font-weight:200;
+        }
+    /*============ GRIDVIEW - Rodapé - Fim ============*/
+        
+        .gridview tr td .margemPadrao
+        {
+            padding-left: 5px;
+            text-align: left;
+        }
+        
+    .gridview tr.gvLinha1
+    {
+        background-color: #FFFFFF;
+        height: 30px;
+    }
+    
+        .gridview tr.gvLinha1 td
+        {
+            border-left:1px groove #AAAAAA;
+        }
+        .gridview tr.gvLinha1 td:first-children
+        {
+            border:1px none #FFF;
+        }
+    
+
+    .gridview tr.gvLinha2
+    {
+        /*background-color: #E3EDF4 !important;*/
+        background-color: #EAF3F9 !important;
+        height: 30px;
+    }
+    
+        .gridview tr.gvLinha2 td:fist-child
+        {
+            border-left:1px none #AAAAAA;
+        }
+        .gridview tr.gvLinha2 td
+        {
+            border-left:1px groove #AAAAAA;
+        }
+
+
+
+tr.gvPaginacao
+{
+    border:1px solid #AAAAAA;  
+    background-color: #FCFCFC;
+    font-size:12px;	
+	border-spacing: 0 !important;
+	border-top: 0;
+    
+}
+
+.gvPaginacao, tr.gvPaginacao:hover td
+{
+    /*background-color: #F9FCFF;*/
+    background-color: #FCFCFC;
+    color: #000;
+    font-family: Times New Roman;
+}
+
+/*******GridView - FIM***************/
+
+/*******Utilidades Colunas - INICIO***************/
+.gridview .colIcone
+{
+    text-align: center;
+    width: 32px;
+}
+
+.gridview tr td.center, th.center
+{
+    text-align:center;
+}
+
+.gridview .w120
+{
+    width:120px;
+}
+
+.gridview .w90
+{
+    width:90px;
+}
+
+/*******Utilidades Colunas - FIM***************/

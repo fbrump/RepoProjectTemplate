@@ -1,0 +1,137 @@
+﻿/* Padrão de documentação de um arquivo CSS para a vida toda.
+
+============== DOCUMENTO CSS - INFRAERO 2009 ====
+
+Autor: David Silva - Analista de Designer / Equipe de Designer [TISI 3]
+Localização: SEDE
+Ramal: 2560
+EMAIL: davidjrnegao@gmail.com
+CELULAR: 	61 - 96889359
+=================================================
+
+============== VERSIONAMENTO ====================
+
+Versão: 1.2
+Obs: Adicionando mensagens de erro e menu com abas
+
+
+Versão: 1.1
+OBS: Menu Scrool na Horizontal 
+Creditos/Contribuições: Google API
+
+Autor: David Silva
+Registro da Versão 1.1:
+Última atualização: 17/09/2009
+Descrição da atualização: Adicionando o menu Scrool
+
+
+Versão: 1.0
+OBS: Oraganizar os atributos css por ordem alfabetica
+
+Autor: David Silva
+Registro da Versão 1.0:
+Última atualização: dd/mm/2---
+Descrição da atualização: Criação do Documento
+
+=================================================
+
+============== CORES PADRAO ====================
+
+background: #FFFFFF (branco);
+texto de menu / barra de navegação no topo: #FFFFFF (branco); 
+texto migalha de pão: #003F6C (azul);
+texto informa dados do usuário no topo do lado direito: #000000 (preto);
+texto maior no meio do sistema na página principal:   #00416C (azul escuro);
+texto menor abaixo do titulo maior no meio do layout na página principal: #999999 (cinza escuro);
+fundo da barra de navegação no topo do sistemas:#0067AC (azul claro);
+texto do menu ao passar o mouse: #33A4F7 (azul mais claro);
+
+
+
+=================================================
+
+============== FONTES PADRAO ====================
+Vide Norma de padronização visual
+fonte Tahoma para titulos e subtitulos
+fonte Arial para menu e texto em geral
+=================================================
+
+============== CAMPOS/MEDIDAS  PADRAO ===========
+nome, cor, medidas (descrição)
+
+campo = cor padrão, tamanho ilimitado( funciona com efeito de hover o desenvolvedor pode colocar o tamanho que quiser );
+campo0 = cor cinza, tamanho ilimitado ( funciona com efeito de hover, tem as cores de background = #CCCCCC - cinza claro) 
+=================================================
+
+
+ */
+ 
+@charset "utf-8";
+
+/*
+============== Importa Arquivos - Início ===============
+*/
+
+/* Cor */
+@import url(color/green.css);
+
+/* Estruturas */
+@import url(estruturas.css);
+
+/* Site */
+@import url(Site.css);
+
+/* Menu */
+@import url(menu.css);
+
+/* GridView */
+@import url(grid.css);
+
+/* Botões */
+@import url(botoes.css);
+
+/* Links genericos */
+@import url(links.css);
+
+/* Fontes Genericas */
+@import url(tipografia.css);
+/*
+
+/* Formularios */
+@import url(formulario.css);
+
+/*
+============== Importa Arquivos - Fim ===============
+
+
+
+*/
+
+
+/*
+
+============== JAVASCRIPT - Bloqueado - Início ===============
+*/
+div#msgJavascriptBloqueado
+{
+    position:relative;
+    background-color: #F00;
+    }
+
+    div#msgJavascriptBloqueado h1
+    {
+        color:#FFF;
+        text-align: center;
+        }
+
+/*
+============== JAVASCRIPT - Bloqueado - Fim ===============
+*/
+
+
+
+.hidden{ visibility:hidden;}
+
+.mostrar{ display: block; }   
+
+.ocultar { display: none; }

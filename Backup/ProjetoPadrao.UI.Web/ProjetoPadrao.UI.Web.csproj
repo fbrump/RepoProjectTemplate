@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{654211FF-1BD9-4686-A872-944CD598A793}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjetoPadrao.UI.Web</RootNamespace>
+    <AssemblyName>ProjetoPadrao.UI.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlertasController.cs" />
+    <Compile Include="Controllers\BaseControllers.cs" />
+    <Compile Include="Controllers\ClassificacaoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Extension\DropdownExtension.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Image\icons\gray\acessilidade.gif" />
+    <Content Include="Content\Image\icons\gray\against.gif" />
+    <Content Include="Content\Image\icons\gray\ajuda.gif" />
+    <Content Include="Content\Image\icons\gray\arrow-down.gif" />
+    <Content Include="Content\Image\icons\gray\arrow-downleft.gif" />
+    <Content Include="Content\Image\icons\gray\arrow-downright.gif" />
+    <Content Include="Content\Image\icons\gray\arrow-left.gif" />
+    <Content Include="Content\Image\icons\gray\arrow-right.gif" />
+    <Content Include="Content\Image\icons\gray\arrow-up.gif" />
+    <Content Include="Content\Image\icons\gray\arrow-upleft.gif" />
+    <Content Include="Content\Image\icons\gray\arrow-upright.gif" />
+    <Content Include="Content\Image\icons\gray\aviao.gif" />
+    <Content Include="Content\Image\icons\gray\back-forth.gif" />
+    <Content Include="Content\Image\icons\gray\bookmark.gif" />
+    <Content Include="Content\Image\icons\gray\bulb.gif" />
+    <Content Include="Content\Image\icons\gray\calendar.gif" />
+    <Content Include="Content\Image\icons\gray\calendar2.gif" />
+    <Content Include="Content\Image\icons\gray\camera.gif" />
+    <Content Include="Content\Image\icons\gray\cart.gif" />
+    <Content Include="Content\Image\icons\gray\caution.gif" />
+    <Content Include="Content\Image\icons\gray\chart.gif" />
+    <Content Include="Content\Image\icons\gray\checkmark.gif" />
+    <Content Include="Content\Image\icons\gray\clipboard.gif" />
+    <Content Include="Content\Image\icons\gray\clock.gif" />
+    <Content Include="Content\Image\icons\gray\closed-folder.gif" />
+    <Content Include="Content\Image\icons\gray\database.gif" />
+    <Content Include="Content\Image\icons\gray\diskette.gif" />
+    <Content Include="Content\Image\icons\gray\document.gif" />
+    <Content Include="Content\Image\icons\gray\double-arrow.gif" />
+    <Content Include="Content\Image\icons\gray\edit.gif" />
+    <Content Include="Content\Image\icons\gray\eject.gif" />
+    <Content Include="Content\Image\icons\gray\exclaim.gif" />
+    <Content Include="Content\Image\icons\gray\fastforward.gif" />
+    <Content Include="Content\Image\icons\gray\favourite.gif" />
+    <Content Include="Content\Image\icons\gray\flag.gif" />
+    <Content Include="Content\Image\icons\gray\graph.gif" />
+    <Content Include="Content\Image\icons\gray\grow.gif" />
+    <Content Include="Content\Image\icons\gray\headphones.gif" />
+    <Content Include="Content\Image\icons\gray\home.gif" />
+    <Content Include="Content\Image\icons\gray\hourglass.gif" />
+    <Content Include="Content\Image\icons\gray\info.gif" />
+    <Content Include="Content\Image\icons\gray\key.gif" />
+    <Content Include="Content\Image\icons\gray\led-false.gif" />
+    <Content Include="Content\Image\icons\gray\led-true.gif" />
+    <Content Include="Content\Image\icons\gray\lock.gif" />
+    <Content Include="Content\Image\icons\gray\mail.gif" />
+    <Content Include="Content\Image\icons\gray\move.gif" />
+    <Content Include="Content\Image\icons\gray\music.gif" />
+    <Content Include="Content\Image\icons\gray\news.gif" />
+    <Content Include="Content\Image\icons\gray\note.gif" />
+    <Content Include="Content\Image\icons\gray\open-folder.gif" />
+    <Content Include="Content\Image\icons\gray\paper-clip.gif" />
+    <Content Include="Content\Image\icons\gray\paper-clip2.gif" />
+    <Content Include="Content\Image\icons\gray\pause.gif" />
+    <Content Include="Content\Image\icons\gray\phone.gif" />
+    <Content Include="Content\Image\icons\gray\play.gif" />
+    <Content Include="Content\Image\icons\gray\plus.gif" />
+    <Content Include="Content\Image\icons\gray\print.gif" />
+    <Content Include="Content\Image\icons\gray\question-mark.gif" />
+    <Content Include="Content\Image\icons\gray\quote.gif" />
+    <Content Include="Content\Image\icons\gray\refresh.gif" />
+    <Content Include="Content\Image\icons\gray\rewind.gif" />
+    <Content Include="Content\Image\icons\gray\search.gif" />
+    <Content Include="Content\Image\icons\gray\shield.gif" />
+    <Content Include="Content\Image\icons\gray\skip-back.gif" />
+    <Content Include="Content\Image\icons\gray\skip.gif" />
+    <Content Include="Content\Image\icons\gray\skull.gif" />
+    <Content Include="Content\Image\icons\gray\statusbar.gif" />
+    <Content Include="Content\Image\icons\gray\stop.gif" />
+    <Content Include="Content\Image\icons\gray\template.gif" />
+    <Content Include="Content\Image\icons\gray\text-bigger.gif" />
+    <Content Include="Content\Image\icons\gray\text-normal.gif" />
+    <Content Include="Content\Image\icons\gray\text-smaller.gif" />
+    <Content Include="Content\Image\icons\gray\trash.gif" />
+    <Content Include="Content\Image\icons\gray\two-docs.gif" />
+    <Content Include="Content\Image\icons\gray\twotone.gif" />
+    <Content Include="Content\Image\icons\gray\undo.gif" />
+    <Content Include="Content\Image\icons\gray\user.gif" />
+    <Content Include="Content\Image\icons\gray\vegetable.gif" />
+    <Content Include="Content\Image\icons\gray\x.gif" />
+    <Content Include="Content\Image\icons\gray\zoom-in.gif" />
+    <Content Include="Content\Image\icons\gray\zoom-out.gif" />
+    <Content Include="Content\Image\icons\green\acessilidade.gif" />
+    <Content Include="Content\Image\icons\green\against.gif" />
+    <Content Include="Content\Image\icons\green\ajuda.gif" />
+    <Content Include="Content\Image\icons\green\arrow-down.gif" />
+    <Content Include="Content\Image\icons\green\arrow-downleft.gif" />
+    <Content Include="Content\Image\icons\green\arrow-downright.gif" />
+    <Content Include="Content\Image\icons\green\arrow-left.gif" />
+    <Content Include="Content\Image\icons\green\arrow-right.gif" />
+    <Content Include="Content\Image\icons\green\arrow-up.gif" />
+    <Content Include="Content\Image\icons\green\arrow-upleft.gif" />
+    <Content Include="Content\Image\icons\green\arrow-upright.gif" />
+    <Content Include="Content\Image\icons\green\aviao.gif" />
+    <Content Include="Content\Image\icons\green\back-forth.gif" />
+    <Content Include="Content\Image\icons\green\bookmark.gif" />
+    <Content Include="Content\Image\icons\green\bulb.gif" />
+    <Content Include="Content\Image\icons\green\calendar.gif" />
+    <Content Include="Content\Image\icons\green\calendar2.gif" />
+    <Content Include="Content\Image\icons\green\camera.gif" />
+    <Content Include="Content\Image\icons\green\cart.gif" />
+    <Content Include="Content\Image\icons\green\caution.gif" />
+    <Content Include="Content\Image\icons\green\chart.gif" />
+    <Content Include="Content\Image\icons\green\checkmark.gif" />
+    <Content Include="Content\Image\icons\green\clipboard.gif" />
+    <Content Include="Content\Image\icons\green\clock.gif" />
+    <Content Include="Content\Image\icons\green\closed-folder.gif" />
+    <Content Include="Content\Image\icons\green\database.gif" />
+    <Content Include="Content\Image\icons\green\diskette.gif" />
+    <Content Include="Content\Image\icons\green\document.gif" />
+    <Content Include="Content\Image\icons\green\double-arrow.gif" />
+    <Content Include="Content\Image\icons\green\edit.gif" />
+    <Content Include="Content\Image\icons\green\eject.gif" />
+    <Content Include="Content\Image\icons\green\exclaim.gif" />
+    <Content Include="Content\Image\icons\green\fastforward.gif" />
+    <Content Include="Content\Image\icons\green\favourite.gif" />
+    <Content Include="Content\Image\icons\green\flag.gif" />
+    <Content Include="Content\Image\icons\green\graph.gif" />
+    <Content Include="Content\Image\icons\green\grow.gif" />
+    <Content Include="Content\Image\icons\green\headphones.gif" />
+    <Content Include="Content\Image\icons\green\home.gif" />
+    <Content Include="Content\Image\icons\green\hourglass.gif" />
+    <Content Include="Content\Image\icons\green\info.gif" />
+    <Content Include="Content\Image\icons\green\key.gif" />
+    <Content Include="Content\Image\icons\green\led-false.gif" />
+    <Content Include="Content\Image\icons\green\led-true.gif" />
+    <Content Include="Content\Image\icons\green\lock.gif" />
+    <Content Include="Content\Image\icons\green\mail.gif" />
+    <Content Include="Content\Image\icons\green\move.gif" />
+    <Content Include="Content\Image\icons\green\music.gif" />
+    <Content Include="Content\Image\icons\green\news.gif" />
+    <Content Include="Content\Image\icons\green\note.gif" />
+    <Content Include="Content\Image\icons\green\open-folder.gif" />
+    <Content Include="Content\Image\icons\green\paper-clip.gif" />
+    <Content Include="Content\Image\icons\green\paper-clip2.gif" />
+    <Content Include="Content\Image\icons\green\pause.gif" />
+    <Content Include="Content\Image\icons\green\phone.gif" />
+    <Content Include="Content\Image\icons\green\play.gif" />
+    <Content Include="Content\Image\icons\green\plus.gif" />
+    <Content Include="Content\Image\icons\green\print.gif" />
+    <Content Include="Content\Image\icons\green\question-mark.gif" />
+    <Content Include="Content\Image\icons\green\quote.gif" />
+    <Content Include="Content\Image\icons\green\refresh.gif" />
+    <Content Include="Content\Image\icons\green\rewind.gif" />
+    <Content Include="Content\Image\icons\green\search.gif" />
+    <Content Include="Content\Image\icons\green\shield.gif" />
+    <Content Include="Content\Image\icons\green\skip-back.gif" />
+    <Content Include="Content\Image\icons\green\skip.gif" />
+    <Content Include="Content\Image\icons\green\skull.gif" />
+    <Content Include="Content\Image\icons\green\statusbar.gif" />
+    <Content Include="Content\Image\icons\green\stop.gif" />
+    <Content Include="Content\Image\icons\green\template.gif" />
+    <Content Include="Content\Image\icons\green\text-bigger.gif" />
+    <Content Include="Content\Image\icons\green\text-normal.gif" />
+    <Content Include="Content\Image\icons\green\text-smaller.gif" />
+    <Content Include="Content\Image\icons\green\trash.gif" />
+    <Content Include="Content\Image\icons\green\two-docs.gif" />
+    <Content Include="Content\Image\icons\green\twotone.gif" />
+    <Content Include="Content\Image\icons\green\undo.gif" />
+    <Content Include="Content\Image\icons\green\user.gif" />
+    <Content Include="Content\Image\icons\green\vegetable.gif" />
+    <Content Include="Content\Image\icons\green\x.gif" />
+    <Content Include="Content\Image\icons\green\zoom-in.gif" />
+    <Content Include="Content\Image\icons\green\zoom-out.gif" />
+    <Content Include="Content\Scripts\jQuery\jquery-1.8.2.js" />
+    <Content Include="Content\Scripts\jQuery\jquery-1.8.2.min.js" />
+    <Content Include="Content\Scripts\menu.js" />
+    <Content Include="Content\Style\base.css" />
+    <Content Include="Content\Style\botoes.css" />
+    <Content Include="Content\Style\color\green.css" />
+    <Content Include="Content\Style\estruturas.css" />
+    <Content Include="Content\Style\formulario.css" />
+    <Content Include="Content\Style\grid.css" />
+    <Content Include="Content\Style\links.css" />
+    <Content Include="Content\Style\menu.css" />
+    <Content Include="Content\Style\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\Style\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\Style\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\Style\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\Style\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\Style\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\Style\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\Style\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\Style\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\Style\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\Style\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\Style\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\Style\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\Style\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\Style\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\Style\tipografia.css" />
+    <Content Include="Content\Style\utilitarios.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Scripts\jQuery\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Content\Scripts\jQuery\jquery-1.5.1.js" />
+    <Content Include="Content\Scripts\jQuery\jquery-1.5.1.min.js" />
+    <Content Include="Content\Scripts\jQuery\jquery-ui-1.8.11.js" />
+    <Content Include="Content\Scripts\jQuery\jquery-ui-1.8.11.min.js" />
+    <Content Include="Content\Scripts\jQuery\jquery.validate-vsdoc.js" />
+    <Content Include="Content\Scripts\jQuery\jquery.validate.js" />
+    <Content Include="Content\Scripts\jQuery\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\modernizr-1.7.js" />
+    <Content Include="Content\Scripts\modernizr-1.7.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Style\Site.css" />
+    <Content Include="Content\Scripts\jQuery\jquery.unobtrusive-ajax.js" />
+    <Content Include="Content\Scripts\jQuery\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Content\Scripts\jQuery\jquery.validate.unobtrusive.js" />
+    <Content Include="Content\Scripts\jQuery\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\Scripts\Microsoft\MicrosoftAjax.js" />
+    <Content Include="Content\Scripts\Microsoft\MicrosoftAjax.debug.js" />
+    <Content Include="Content\Scripts\Microsoft\MicrosoftMvcAjax.js" />
+    <Content Include="Content\Scripts\Microsoft\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Content\Scripts\Microsoft\MicrosoftMvcValidation.js" />
+    <Content Include="Content\Scripts\Microsoft\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\Scripts\Estrutura\ajax\" />
+    <Folder Include="Content\Scripts\Estrutura\bind\" />
+    <Folder Include="Content\Scripts\Estrutura\function\" />
+    <Folder Include="Content\Scripts\Estrutura\load\" />
+    <Folder Include="Content\Scripts\Estrutura\render\" />
+    <Folder Include="Enum\" />
+    <Folder Include="Interface\" />
+    <Folder Include="Struct\" />
+    <Folder Include="WebControl\" />
+    <Folder Include="WebService\" />
+    <Folder Include="WebUserControl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoPadrao.BE\ProjetoPadrao.BE.csproj">
+      <Project>{971106B3-07AB-4087-BEA8-E03B1B174A63}</Project>
+      <Name>ProjetoPadrao.BE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoPadrao.BLL\ProjetoPadrao.BLL.csproj">
+      <Project>{9ACF1A4C-7CE7-4AFC-8EA1-2E9C337D750F}</Project>
+      <Name>ProjetoPadrao.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Classificacao\Teste.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Classificacao\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\MasterPage\_MasterPage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Alertas\UsuarioExpirouView.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Alertas\ManutencaoView.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Partial\_PartialMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Partial\_PartialCaminhoPao.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Partial\_PartialReferenciaScript.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Classificacao\Maintain.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Partial\_PartialReferenciaStyle.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Alertas\Erro.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65000</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

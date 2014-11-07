@@ -1,0 +1,47 @@
+﻿@model ProjetoPadrao.BE.Entidade.Classificacao
+@{
+    ViewBag.Title = "Manter Classificação";
+    ViewBag.TitlePagina = "Manter Classificação";
+    
+    Dictionary<string, string> dicUrlImg = base.Session["urlImg"] as Dictionary<string, string>;
+    SelectList selectCor = ViewBag.ListaCor as SelectList;
+}
+
+<section class="formulario">
+    <input type="hidden" id="hdnIdClassificacao" value="@Model.IdClassificacao.ToString()" />
+        @Html.ValidationSummary(false, "Erro(s):")
+        @using (Html.BeginForm()) {
+        <fieldset class="formulario">
+            <legend>@ViewBag.LegendaFormulario</legend>
+            @Html.ValidationSummary(false)
+            <ul>
+                <li>
+                    @Html.LabelFor(model => model.TxtNome) :</li>
+                <li>
+                    @Html.TextBoxFor(model => model.TxtNome)
+                    </li>
+                <li>
+                    @Html.LabelFor(model => model.DscComentario) :</li>
+                <li>
+                    @Html.TextBoxFor(model => model.DscComentario, new { @id = "txtComentario" }) </li>
+            </ul>
+            <ul>
+                <li>
+                    @Html.LabelFor(model => model.CodCor) :</li>
+                <li>
+                    @Html.DropDownListFor(model => model.CodCor, new SelectList(Model.ListaCor, "Key", "Value", (Model.CodCor == "0" ? "-1" : Model.CodCor)), new { @id="ddlCor" })
+                    @*@Html.DropDownList("ddlCor", new SelectList(Model.ListaCor,"Key","Value", (Model.CodCor == "0" ? "-1" : Model.CodCor)))*@ </li>
+            </ul>
+            <section class="botoes">
+                @Html.HiddenFor(model => model.IdClassificacao, new { @id="hdnIdClassificacao" })
+                <input type="submit" id="btnSalvar" value="Salvar" title="@ViewBag.TitleButtonSave"/>
+            </section>    
+        </fieldset>
+        }
+</section>
+<section class="botoes">
+    <a href="/Classificacao/Index/" title="Voltar para a tela de consulta de classificação">
+        <img src="@dicUrlImg["urlImgArrowLeft"]" alt="Voltar para a tela de consulta de classificação" title="Voltar para a tela de consulta de classificação"/>
+        Voltar
+    </a>
+</section>

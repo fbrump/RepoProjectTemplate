@@ -1,0 +1,55 @@
+﻿@using ProjetoPadrao.BE.Entidade;
+@model IList<Classificacao>
+
+@{
+    ViewBag.Title = "Consulta Classificacao";
+    ViewBag.TitlePagina = "Consulta das Classificações";
+
+    Dictionary<string, string> dicUrlImg = base.Session["urlImg"] as Dictionary<string, string>;
+}
+
+<section>
+    <fieldset class="fdsConsulta">
+        <legend>Resultado da Consulta</legend>
+        <table class="gridview">
+            <!-- Conforme W3C primeiro colocamos o thead e o tfoot, depois o tbody, para fim de renderização. -->
+            <thead>
+                <tr>
+                    <th class="center">Código</th>
+                    <th>Nome</th>
+                    <th>Comentário</th>
+                    <th class="center">Cor</th>
+                    <th class="center">Ação</th>
+                </tr>
+            </thead>
+            <tfoot class="rodape">
+                <tr>
+                    <td colspan="5">Rodapé da GridView</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                @foreach (var item in this.Model)
+                {
+                    <tr>
+                        <td class="center"><label>@item.IdClassificacao</label></td>
+                        <td>@item.TxtNome</td>
+                        <td><p>@item.DscComentario </p></td>
+                        <td class="center"><div class="content-cor" style=" background: @item.CodCor">@item.TxtCor </div></td>
+                        <td>
+                            <a href="/Classificacao/Edit/@item.IdClassificacao" class="editar" title="Editar a classificação">
+                                <img src="@dicUrlImg["urlImgEdit"]" alt="Editar a classificação" title="Editar a classificação"/>
+                            </a>
+                        </td>
+                            
+                    </tr>  
+                }
+            </tbody>
+        </table>
+    </fieldset>
+</section>
+<section class="botoes">
+    <a href="/Classificacao/Creat/" title="Incluir uma nova classificação">
+        <img src="@dicUrlImg["urlImgArrowRight"]" alt="Incluir uma nova classificação" title="Incluir uma nova classificação"/>
+        Incluir
+    </a>
+</section>

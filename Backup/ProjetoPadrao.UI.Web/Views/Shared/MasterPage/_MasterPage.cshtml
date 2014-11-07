@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+
+    <!-- Referência de Style -->
+    @Html.Partial("Partial/_PartialReferenciaStyle")
+
+    <!-- Referência de Script -->
+    @Html.Partial("Partial/_PartialReferenciaScript")
+
+    <!-- Contente para outras páginas que cetarem script ou style -->
+    @RenderSection("PageScripts", false)
+
+    <script type="text/javascript">
+        /// Validação se o java script está habilitado ou não.
+        $(document).ready(function () {
+            $('#msgJavascriptBloqueado').hide();
+        });
+    </script>
+
+</head>
+<body>
+    <div id="msgJavascriptBloqueado">
+        <h1>Para melhor desempenho do sistema padrão, habilite o javascript.</h1>
+    </div>
+    <!-- Todo o Site. -->
+    <div class="page">
+        <!-- Área do Cabeçalho do Site. -->
+        <header id="header">
+            <!-- Área onde vai ficar o Título, Logo Marca, Login,... etc. -->
+            <section class="header-top">
+                <!-- Área onde se encontra Título e sub título do site -->
+                <div class="infoPage">
+                    <h1>SLMVC</h1>
+                    <h3>Sistema de Livraria em MVC <em>(Model, View, Control)</em></h3>
+                </div>
+                <!-- Área onde contém o login do site. -->
+                <div class="infoLogin">
+                    @Html.Partial("_LogOnPartial") 
+                </div>
+            </section>
+            <section class="header-botton">
+                <!-- Área onde se encontra os links de menu do Site. -->
+                <nav id="menu">
+                    @Html.Partial("Partial/_PartialMenu")
+                </nav>
+                <!-- Caminho de pão do site, onde vai armazenar os linkes com caminhos para a paginal que está apresentando atualmente. -->
+                <nav id="caminho-pao">
+                    @Html.Partial("Partial/_PartialCaminhoPao")
+                </nav>
+            </section>
+        </header>
+        <!-- Aréada onde se encontra o Conteúdo do Site, Caminho de Pão, ...etc. -->
+        <section role="main" id="main">
+            <!-- Conteúdo atual da Página -->
+            <section>
+                <header id="main-header">
+                    <!-- Título indicativo da página -->
+                    <h2>@ViewBag.TitlePagina</h2>
+                    <h4>@ViewBag.Message</h4>
+                </header>
+                <section id="main-content">
+                    @RenderBody()
+                </section>
+            </section>
+        </section>
+        <!-- Rodapé do Site -->
+        <footer id="footer">
+            <p>Rodapé</p>
+        </footer>
+    </div>
+</body>
+</html>

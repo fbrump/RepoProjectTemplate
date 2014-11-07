@@ -1,0 +1,366 @@
+/*
+
+
+============== DOCUMENTO CSS - INFRAERO 2009 ====
+Autor: David Silva - Analista de Designer / Equipe de Designer [TISI 3]
+Localização: SEDE
+Ramal: 2560
+EMAIL: davidjrnegao@gmail.com
+CELULAR: 	61 - 96889359
+Descrição: Estilização para formuláruio padrão 
+=================================================
+	
+*/
+
+/* Formulario campo um abaixo do outro dependendo do tamanho da div*/
+
+.formulario
+{
+	margin:0 auto;
+	padding:0 0 10px 0;
+	margin-top:20px;	
+	width: 99%;
+	font-size: 12px;
+}
+
+    .formulario label{	
+	    display:block;
+	    font-weight:bold;
+	    float:left;	
+	    width: auto;
+	    text-align:right;
+	    padding-right: 8px;
+	    margin-top: 2px;
+	    min-height: 25px;
+    }
+    
+        .formulario label.lblDireita
+        {
+            text-align: left;
+            float: none;    
+        }    
+    
+    .formulario div.subCol1
+    {
+        width:50%;
+    }
+    
+    .formulario div.subCol2
+    {
+        margin-left: 6px;
+        float:left;
+    }
+    
+    .formulario .pequeno{width: 50px;}
+    .formulario .medio{width: 100px;}
+    .formulario .grande{width: 250px;} 
+    .formulario .super{width: 500px;}
+    
+    .formulario .marginLeft { margin-left: 5px !important; }
+    .formulario .marginRight { margin-right: 5px !important;}
+    .formulario .marginBottom15 { margin-bottom: 15px;}
+    .formulario .marginTop15 { margin-top: 15px;}
+    .formulario .marginTop40 { margin-top: 40px;}
+    .formulario .clearMarginTop { margin-top:0px !important;}
+    .formulario .clearMarginLeft { margin-left:0px !important;}
+    .formulario .clearMarginBottom { margin-bottom: 0px; }
+    .formulario .textCenter { text-align: center !important; }
+    
+    .formulario #ucDependencia
+    {
+        min-height: 25px;
+        height: auto;
+    }
+    
+    .formulario ul{float: left; margin-left: 0px; list-style-type: none;}
+        .formulario ul li {clear: both; margin: 10px 0 0 18px; padding: 0px;}
+
+        .horizontal ul li {float: left; clear:none; margin: 10px auto 0 18px;}
+
+            .formulario ul li p { font-weight:bold; }
+
+            .formulario ul li label.red {     color: #FF0000; margin: 0 5px 0 0 !important; padding: 0; }
+
+    .formulario fieldset
+    {
+	    clear: both;
+	    border: 1px solid #c9c9c9;
+	    min-width: 50px !important;
+	    padding: 0 10px 10px 10px;
+    }
+
+    .formulario .form_ident
+    {
+	    float: left;
+    }
+
+    .formulario ul:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+
+        .formulario ul li:after {
+            clear: both;
+            content: ".";
+            display: block;
+            height: 0;
+            visibility: hidden;
+        }
+
+    .formulario legend{
+	    padding:0;
+	    font-weight:bold;
+	    color:#666;
+	    font-size:13px;
+	    margin-left:5px;
+	    padding-bottom:10px;
+	    font-weight:bold;
+    }
+
+.horizontal label		
+{
+    width: auto !important;
+	padding: 0 8px 0 0;
+}
+
+/*============ BOTÕES - Início ============*/
+
+.botoesPopUp{padding-left:5px; }
+.botoesPopUp a:hover{text-decoration: none}
+.botoesPopUp a
+/*============ BOTÕES - Fim ============*/
+
+fieldset.formulario div.formulario .botoes a span
+
+{
+    float: left;
+    margin: 0 5px;
+    padding: 0;
+    z-index: 1000;
+    }
+.botoesPopUp a img{ margin-top: -4px;}
+
+fieldset.formulario .botoes .botoesPopUp a span
+{
+    color: #006699;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    z-index: 1;
+}
+    fieldset.formulario .botoes .botoesPopUp a img{
+        float: left;
+        margin: 1px 4px 0 0 !important
+    }
+    
+
+    .formulario .form_ident
+    {
+	    float: left;
+    }
+
+    .formulario .pequenoTexto{
+	    display:block;
+	    font-weight:normal;
+	    font-size:11px;
+	    text-align:right;
+	    width:150px;		
+    }
+
+    .formulario input, .formulario select, .formulario textarea{
+	    font-family:Arial, Helvetica, sans-serif;
+	    font-size:12px;	
+	    padding: 4px 2px;
+	    margin:2px 0 0 0;		
+    }
+
+    .formulario select{padding: 3px 2px;}
+
+    .formulario input, .formulario select, .formulario textarea{
+	    float:left;
+    }
+
+    .formulario input[type="checkbox"], 
+    .formulario input[type="radio"], 
+    input[type="image"]{border: 0px !Important}
+
+input[type="image"]{
+    padding: 0 !important;   
+}
+
+
+            .formulario ul li .radios {float: left; display: block}
+                .formulario ul li .radios label{ width: auto; font-weight: normal; margin-left: 5px; padding: 0 !important; }
+            .formulario .radios input[type="radio"]{margin:2px 0 5px 5px;}
+
+input[type="submit"], input[type="button"] {
+	clear:both;	
+	color:#333;
+	font-size:11px;
+	font-weight:bold;		
+	height:31px;	
+	margin-left:5px;
+	text-align:center;
+	cursor:pointer;	
+	padding: 0 10px;
+}
+
+    .formulario legend{
+	    padding:0;
+	    font-weight:bold;
+	    color:#666;
+	    font-size:13px;
+	    margin-left:5px;
+	    padding-bottom:10px;
+	    font-weight:bold;
+    }
+
+    .formulario .form_ident
+    {
+	    float: left;
+    }
+
+/* TAMANHOS DE INPUTS / SELECTS / TEXTAREA - Forms */
+
+
+/*
+============== CAMPOS FORM =============== */ 
+
+/*nesse campo o controle do elemento é total, somente 
+a opção de cor não é possivel alterar.
+*/
+
+
+
+.campo0{
+	width:230px;	
+}
+
+.campo1{
+	width:100px;	
+}
+
+.campo2{
+	width:335px;
+}
+
+.campo3{
+	width:50px;
+}
+
+.campo4{
+    width: 450px;
+}
+
+input.frmErro, select.frmErro, textArea.frmErro{
+	background:url(../../../imagens/frmErro.jpg);
+	border:1px solid red;	
+}
+/*
+============== CAMPOS FORM Fim =============== */ 
+
+/*
+============== CENTRALIZADO CAMPOS FORM SMSP Início =============== */ 
+
+.formulario .centralizar
+{
+    min-height: 15px;
+    width:100%;
+}
+    .formulario .centralizar > .ulColWidth
+    {
+        width: 48%;
+    }
+        
+    .formulario .centralizar > .cleanFlot
+    {
+        float: none !important;
+    }
+            
+    .formulario .centralizar div.colunaE, div.colunaD
+    {
+        float: left;
+    }
+            
+    .formulario .centralizar div.colunaE
+    {
+        text-align: right;
+        width: 45%;
+    }
+            
+        .formulario .centralizar div.colunaE p.alignDireita
+        {
+            float: right;
+        }
+        
+    .formulario .centralizar div.colunaD
+    {
+        padding-left: 7px;
+        text-align: left;
+        width: 45%;
+    }
+
+/*
+============== CENTRALIZADO CAMPOS FORM SMSP Fim =============== */ 
+
+/*
+============== TOPICO Início =============== */ 
+
+.formulario .topico
+{
+    margin-top: 26px;
+}
+    .formulario .topico > h4
+    {
+        font-size: 14px;
+    }
+    
+    .formulario .topico > hr
+    {
+        clear:both;
+        width: 900px;
+    }
+
+/*
+============== TOPICO Fim =============== */ 
+/*
+============== DIV AVISO Início =============== */ 
+
+.ativarAviso:hover .aviso
+{
+    background-color: #FFEAEA;
+}
+
+.formulario .aviso
+{
+    border-left: 2px solid #D30C0C;
+    height: 50px;
+    padding: 5px;
+}
+
+    .formulario .aviso label, .formulario .aviso p
+    {
+        color: Red;
+        font-size: 13px;
+    }
+
+    .formulario .aviso p
+    {
+        font-style: italic;
+        clear:both;
+    }
+    
+/*
+============== DIV AVISO Fim =============== */ 
+
+.textForLabel
+{
+    width:98%; 
+    border: none;
+    border-color: White;
+    background-color:transparent;
+}
+.textForLabel:hover { border:none; }

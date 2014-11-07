@@ -1,0 +1,183 @@
+﻿/*
+
+
+============== DOCUMENTO CSS - INFRAERO 2009 ====
+
+Autor: David Silva - Analista de Designer / Equipe de Designer [TISI 3]
+Localização: SEDE
+Ramal: 2560
+EMAIL: davidjrnegao@gmail.com
+CELULAR: 	61 - 96889359
+=================================================
+
+============== VERSIONAMENTO ====================
+
+Versão: 1.2
+Obs: Adicionando mensagens de erro e menu com abas
+
+
+Versão: 1.1
+OBS: Menu Scrool na Horizontal 
+Creditos/Contribuições: Google API
+
+Autor: David Silva
+Registro da Versão 1.1:
+Última atualização: 17/09/2009
+Descrição da atualização: Adicionando o menu Scrool
+
+
+Versão: 1.0
+OBS: Oraganizar os atributos css por ordem alfabetica
+
+Autor: David Silva
+Registro da Versão 1.0:
+Última atualização: dd/mm/2---
+Descrição da atualização: Criação do Documento
+
+=================================================
+
+============== CORES PADRAO ====================
+
+background: #FFFFFF (branco);
+texto de menu / barra de navegação no topo: #FFFFFF (branco); 
+texto migalha de pão: #003F6C (azul);
+texto informa dados do usuário no topo do lado direito: #000000 (preto);
+texto maior no meio do sistema na página principal:   #00416C (azul escuro);
+texto menor abaixo do titulo maior no meio do layout na página principal: #999999 (cinza escuro);
+fundo da barra de navegação no topo do sistemas:#0067AC (azul claro);
+texto do menu ao passar o mouse: #33A4F7 (azul mais claro);
+
+
+
+=================================================
+
+============== FONTES PADRAO ====================
+Vide Norma de padronização visual
+fonte Tahoma para titulos e subtitulos
+fonte Arial para menu e texto em geral
+=================================================
+
+============== CAMPOS/MEDIDAS  PADRAO ===========
+nome, cor, medidas (descrição)
+
+campo = cor padrão, tamanho ilimitado( funciona com efeito de hover o desenvolvedor pode colocar o tamanho que quiser );
+campo0 = cor cinza, tamanho ilimitado ( funciona com efeito de hover, tem as cores de background = #CCCCCC - cinza claro) 
+=================================================
+
+
+ */
+ 
+ /*============== PADRÃO - Site - Início =============== */
+ 
+ body, .page
+{
+    /*background-color: #E3EDE3;*/
+    }
+
+    body header#header
+    {
+        background-color: #669B7E;
+        }
+        
+        
+    nav#caminho-pao a, 
+    nav#caminho-pao label, 
+    nav#caminho-pao strong
+    {
+        color: #9BAAA0;
+        }
+    nav#caminho-pao a:hover{ color: #4F8963!important; }
+    
+    nav#caminho-pao > a, 
+    nav#caminho-pao > label, 
+    nav#caminho-pao > strong, 
+    nav#caminho-pao > a:visited, 
+    nav#caminho-pao span
+    {
+        text-decoration: none;
+        color: #9BAAA0;
+        }
+        
+    nav#caminho-pao > a:hover
+    {
+        text-decoration: none;
+        color: Grey !important;
+        }
+    nav#caminho-pao{ background-color: #D4DBD6; }
+ 
+#main #main-header{ background-color: #F7F7F7; }
+ 
+#main > section
+{
+    background-color: #FFF;
+    }
+ 
+footer,#footer
+{
+    background-color: #848484;
+    color: #DDDDDD;
+    }
+    
+    footer,#footer label,
+    footer,#footer p,
+    footer,#footer strong,
+    footer,#footer em,
+    footer,#footer b,
+    footer,#footer i,
+    footer,#footer legend
+    {
+        color: #DDDDDD;
+        }
+ 
+ label,p,strong,em,b,i,legend
+ {
+     color: #9BAAA0;
+     }
+ 
+ 
+ h1 { color: #494444;}
+ h2 { color: #827A7A;}
+ h3 { color: #A5A5A5;}
+ h4 { color: #B8BCBA;}
+ h5 { color: #C3C9C6;}
+ h6 { color: #C3C9C6;}
+ 
+ /*============== PADRÃO - Site - Fim =============== */
+ 
+ 
+ /*============== PADRÃO - GridView - Início =============== */
+ 
+ .gridview .cabecalho tr, .gridview thead tr
+ {
+     background-color: #8C9992;
+     }
+     .gridview .cabecalho, .gridview thead, .gridview .cabecalho label, .gridview thead label, .gridview .cabecalho span, .gridview thead span
+     {
+         color: #FFF;
+         }
+     
+
+.gridview tfoot, .gridview .rodape
+{
+    background-color: #495B51;
+    }
+
+.gridview tbody, .gridview .corpo
+{
+    background-color: #F9FCFA;
+    }
+.gridview tbody tr:hover td, .gridview .corpo tr:hover td
+{
+    background-color: #E8FFF2;
+    }
+    
+/*============== PADRÃO - GridView - Fim =============== */
+
+/*============== PADRÃO - Sumario - Início =============== */
+
+section.sumario dl.principal
+{
+    background-color: #EBEDEA;
+    }
+    
+/*============== PADRÃO - Sumario - Fim =============== */
