@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoPadrao.UI.Web", "ProjetoPadrao.UI.Web\ProjetoPadrao.UI.Web.csproj", "{654211FF-1BD9-4686-A872-944CD598A793}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoPadrao.BLL", "ProjetoPadrao.BLL\ProjetoPadrao.BLL.csproj", "{9ACF1A4C-7CE7-4AFC-8EA1-2E9C337D750F}"
